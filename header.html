@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles/header.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>We are delighted to have you here. Our website provides a wide range of services designed to help you achieve your goals. Whether you're looking for information, services, or support, we are here to assist you.</p>
+        <p>Scroll down to learn more about what we offer.</p>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Our company was founded on the principles of innovation and customer satisfaction. We have been in the industry for over a decade, providing top-notch services and solutions to our clients.</p>
+        <p>Our team is composed of skilled professionals who are dedicated to delivering high-quality results. We believe in continuous improvement and always strive to exceed our clients' expectations.</p>
+    </section>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <p>We offer a variety of services to cater to your needs:</p>
+        <ul>
+            <li><strong>Consulting:</strong> Expert advice to help you make informed decisions.</li>
+            <li><strong>Development:</strong> Custom software development tailored to your requirements.</li>
+            <li><strong>Support:</strong> Reliable support to ensure your operations run smoothly.</li>
+            <li><strong>Training:</strong> Comprehensive training programs to enhance your team's skills.</li>
+        </ul>
+        <p>Our services are designed to provide you with the best possible outcomes, ensuring your success and satisfaction.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to learn more about our services, please feel free to reach out to us.</p>
+        <p><strong>Email:</strong> info@ourwebsite.com</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p>We look forward to hearing from you and assisting you with your needs.</p>
+    </section>
+
+    <script >
+        window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+    </script>
+</body>
+</html>
